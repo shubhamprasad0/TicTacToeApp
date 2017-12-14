@@ -73,6 +73,7 @@
         app:layout_constraintGuide_percent="0.1" />
 
     <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_guideline"
@@ -88,6 +89,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:checked="true"
             android:fontFamily="serif"
             android:text="Play with computer"
             android:textColor="@color/black"
@@ -100,6 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
+            android:buttonTint="@color/colorPrimaryDark"
             android:fontFamily="serif"
             android:text="Play with human"
             android:textColor="@color/black"
