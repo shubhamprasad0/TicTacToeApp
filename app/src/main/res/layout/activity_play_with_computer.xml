@@ -75,7 +75,9 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_0"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_0"
-        app:srcCompat="@color/white" />
+        app:srcCompat="@color/white"
+        android:onClick="pos0ButtonClicked"
+        />
 
     <ImageButton
         android:id="@+id/pos_1"
@@ -89,7 +91,9 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_0"
-        app:srcCompat="@color/white" />
+        app:srcCompat="@color/white"
+        android:onClick="pos1ButtonClicked"
+        />
 
     <ImageButton
         android:id="@+id/pos_2"
@@ -103,7 +107,9 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_3"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_0"
-        app:srcCompat="@color/white" />
+        app:srcCompat="@color/white"
+        android:onClick="pos2ButtonClicked"
+        />
 
     <ImageButton
         android:id="@+id/pos_3"
@@ -117,7 +123,9 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_0"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_1"
-        app:srcCompat="@color/white" />
+        app:srcCompat="@color/white"
+        android:onClick="pos3ButtonClicked"
+        />
 
     <ImageButton
         android:id="@+id/pos_4"
@@ -131,7 +139,9 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_1"
-        app:srcCompat="@color/white" />
+        app:srcCompat="@color/white"
+        android:onClick="pos4ButtonClicked"
+        />
 
     <ImageButton
         android:id="@+id/pos_5"
@@ -145,7 +155,9 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_3"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_1"
-        app:srcCompat="@color/white" />
+        app:srcCompat="@color/white"
+        android:onClick="pos5ButtonClicked"
+        />
 
     <ImageButton
         android:id="@+id/pos_6"
@@ -159,7 +171,9 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_0"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_2"
-        app:srcCompat="@color/white" />
+        app:srcCompat="@color/white"
+        android:onClick="pos6ButtonClicked"
+        />
 
     <ImageButton
         android:id="@+id/pos_7"
@@ -173,7 +187,9 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_2"
-        app:srcCompat="@color/white" />
+        app:srcCompat="@color/white"
+        android:onClick="pos7ButtonClicked"
+        />
 
     <ImageButton
         android:id="@+id/pos_8"
@@ -187,10 +203,12 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_3"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_2"
-        app:srcCompat="@color/white" />
+        app:srcCompat="@color/white"
+        android:onClick="pos8ButtonClicked"
+        />
 
     <TextView
-        android:id="@+id/turn_indicator"
+        android:id="@+id/turn_indicator_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -198,7 +216,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="monospace"
-        android:text="Your Turn"
+        android:text="'s Turn"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -206,4 +224,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/turn_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/pos_0"
+        app:layout_constraintEnd_toStartOf="@+id/turn_indicator_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/x" />
 </android.support.constraint.ConstraintLayout>
