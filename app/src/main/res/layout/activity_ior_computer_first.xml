@@ -73,7 +73,7 @@
         app:layout_constraintGuide_percent="0.1" />
 
     <RadioGroup
-        android:id="@+id/radio_group"
+        android:id="@+id/first_player"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_guideline"
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/top_guideline">
 
         <RadioButton
-            android:id="@+id/play_with_computer"
+            android:id="@+id/human_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -99,7 +99,7 @@
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/play_with_human"
+            android:id="@+id/computer_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"

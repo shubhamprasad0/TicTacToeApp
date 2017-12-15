@@ -25,6 +25,18 @@ class Board() {
                                 intArrayOf(0, 0, 0))
 
     /**
+     * Function to retrieve the elements of board
+     *
+     * @param row (row number of element)
+     * @param col (column number of element)
+     *
+     * @return board[row][col] (the value at board[row][col])
+     */
+    fun valAtPosition(row: Int, col: Int): Int {
+        return board[row][col]
+    }
+
+    /**
      * Checks whether there is any empty space left on the board or not
      *
      * @return true (if any position is empty on the board)

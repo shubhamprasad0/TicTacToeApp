@@ -1,22 +1,49 @@
 package com.example.shubham.tictactoe
 
+import android.media.Image
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 
 class PlayWithComputerActivity : AppCompatActivity() {
 
     var isXTurn = true // boolean to determine whether it is X's turn or not
-    private var board = Board()
+    var isBotsTurn = false // boolean to determine whether it is bot's turn or not
+    private var board = Board()  // the tic-tac-toe board on which game has to be played
+    private var botPlayer = BotPlayer()  // the bot player
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_play_with_computer)
+        val intent = intent
+        val firstPlayerIndex = intent.getIntExtra("FIRST_PLAYER", 0)
+
+        isBotsTurn = firstPlayerIndex != 0 // 0 is the index of the human player
+        startGameWithBot(isBotsTurn)
+    }
+
+    /**
+     * Checks whether it is bot's turn and takes necessary actions accordingly
+     */
+    private fun startGameWithBot(isBotsTurn: Boolean) {
+        if (!isBotsTurn) {
+            Toast.makeText(this, "Please make your move", Toast.LENGTH_SHORT).show()
+        } else {
+            val botsMove = botPlayer.getBestMove(board, isXTurn)
+            when(botsMove) {
+                0 -> findViewById<ImageButton>(R.id.pos_0).performClick()
+                1 -> findViewById<ImageButton>(R.id.pos_1).performClick()
+                2 -> findViewById<ImageButton>(R.id.pos_2).performClick()
+                3 -> findViewById<ImageButton>(R.id.pos_3).performClick()
+                4 -> findViewById<ImageButton>(R.id.pos_4).performClick()
+                5 -> findViewById<ImageButton>(R.id.pos_5).performClick()
+                6 -> findViewById<ImageButton>(R.id.pos_6).performClick()
+                7 -> findViewById<ImageButton>(R.id.pos_7).performClick()
+                8 -> findViewById<ImageButton>(R.id.pos_8).performClick()
+            }
+        }
     }
 
     /**
@@ -159,6 +186,7 @@ class PlayWithComputerActivity : AppCompatActivity() {
      */
     private fun changeTurnStatus() {
         isXTurn = !isXTurn
+        isBotsTurn = !isBotsTurn
         val imageView = findViewById<ImageView>(R.id.turn_indicator)
         if(isXTurn) {
             imageView.setImageResource(R.mipmap.x)
@@ -484,6 +512,7 @@ class PlayWithComputerActivity : AppCompatActivity() {
             onGameOver(status)
         } else {
             changeTurnStatus()
+            startGameWithBot(isBotsTurn)
         }
     }
 
