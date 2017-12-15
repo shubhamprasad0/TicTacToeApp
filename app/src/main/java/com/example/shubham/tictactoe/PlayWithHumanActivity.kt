@@ -28,7 +28,6 @@ class PlayWithHumanActivity : AppCompatActivity() {
         board.setAtPosition(0, isXTurn)
         imageButton.isClickable = false
         monitorGame()
-        changeTurnStatus()
     }
 
     /**
