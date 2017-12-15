@@ -22,16 +22,15 @@ class MainActivity : AppCompatActivity() {
      * Starts the game in two-player mode if the user chose "Play with Human"
      *
      */
-    fun startGame(view: View) {
+    fun startGame(v: View) {
         val index = getIndexOfCheckedRadioButton()
         if (index == 0) {
-            val intent = Intent(this, PlayWithComputerActivity::class.java)
+            val intent = Intent(this, IOrComputerFirstActivity::class.java)
             startActivity(intent)
         } else {
             val intent = Intent(this, PlayWithHumanActivity::class.java)
             startActivity(intent)
         }
-
     }
 
     /**

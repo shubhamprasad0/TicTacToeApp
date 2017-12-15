@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PlayWithHumanActivity" />
-        <activity android:name=".PlayWithComputerActivity"></activity>
+        <activity android:name=".PlayWithComputerActivity" />
+        <activity android:name=".IOrComputerFirstActivity"></activity>
     </application>
 
 </manifest>
