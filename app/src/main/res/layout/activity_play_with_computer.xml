@@ -64,6 +64,7 @@
         app:layout_constraintGuide_percent="0.25" />
 
     <ImageButton
+        android:scaleType="fitXY"
         android:id="@+id/pos_0"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -71,15 +72,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="pos0ButtonClicked"
+        android:soundEffectsEnabled="true"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_1"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_0"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_0"
-        app:srcCompat="@color/white"
-        android:onClick="pos0ButtonClicked"
-        />
+        app:srcCompat="@color/white" />
 
     <ImageButton
+        android:scaleType="fitXY"
         android:id="@+id/pos_1"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -87,15 +89,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="pos1ButtonClicked"
+        android:soundEffectsEnabled="true"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_1"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_0"
-        app:srcCompat="@color/white"
-        android:onClick="pos1ButtonClicked"
-        />
+        app:srcCompat="@color/white" />
 
     <ImageButton
+        android:scaleType="fitXY"
         android:id="@+id/pos_2"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -103,15 +106,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="pos2ButtonClicked"
+        android:soundEffectsEnabled="true"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_1"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_3"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_0"
-        app:srcCompat="@color/white"
-        android:onClick="pos2ButtonClicked"
-        />
+        app:srcCompat="@color/white" />
 
     <ImageButton
+        android:scaleType="fitXY"
         android:id="@+id/pos_3"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -119,15 +123,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="pos3ButtonClicked"
+        android:soundEffectsEnabled="true"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_2"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_0"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_1"
-        app:srcCompat="@color/white"
-        android:onClick="pos3ButtonClicked"
-        />
+        app:srcCompat="@color/white" />
 
     <ImageButton
+        android:scaleType="fitXY"
         android:id="@+id/pos_4"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -135,15 +140,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="pos4ButtonClicked"
+        android:soundEffectsEnabled="true"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_2"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_1"
-        app:srcCompat="@color/white"
-        android:onClick="pos4ButtonClicked"
-        />
+        app:srcCompat="@color/white" />
 
     <ImageButton
+        android:scaleType="fitXY"
         android:id="@+id/pos_5"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -151,15 +157,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="pos5ButtonClicked"
+        android:soundEffectsEnabled="true"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_2"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_3"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_1"
-        app:srcCompat="@color/white"
-        android:onClick="pos5ButtonClicked"
-        />
+        app:srcCompat="@color/white" />
 
     <ImageButton
+        android:scaleType="fitXY"
         android:id="@+id/pos_6"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -167,15 +174,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="pos6ButtonClicked"
+        android:soundEffectsEnabled="true"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_3"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_0"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_2"
-        app:srcCompat="@color/white"
-        android:onClick="pos6ButtonClicked"
-        />
+        app:srcCompat="@color/white" />
 
     <ImageButton
+        android:scaleType="fitXY"
         android:id="@+id/pos_7"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -183,15 +191,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="pos7ButtonClicked"
+        android:soundEffectsEnabled="true"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_3"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_1"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_2"
-        app:srcCompat="@color/white"
-        android:onClick="pos7ButtonClicked"
-        />
+        app:srcCompat="@color/white" />
 
     <ImageButton
+        android:scaleType="fitXY"
         android:id="@+id/pos_8"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -199,13 +208,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="pos8ButtonClicked"
+        android:soundEffectsEnabled="true"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_3"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_3"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline_2"
         app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_2"
-        app:srcCompat="@color/white"
-        android:onClick="pos8ButtonClicked"
-        />
+        app:srcCompat="@color/white" />
 
     <TextView
         android:id="@+id/turn_indicator_text"
@@ -216,7 +225,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="monospace"
-        android:text="'s Turn"
+        android:text=" 's Turn"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -227,16 +236,62 @@
 
     <ImageView
         android:id="@+id/turn_indicator"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/turn_indicator_image_horizontal_guideline_1"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_1"
+        app:layout_constraintStart_toStartOf="@+id/turn_indicator_image_vertical_guideline"
+        app:layout_constraintTop_toTopOf="@+id/turn_indicator_image_horizontal_guideline_0"
+        app:srcCompat="@mipmap/x" />
+
+    <Button
+        android:id="@+id/play_again"
+        android:onClick="playAgain"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/pos_0"
-        app:layout_constraintEnd_toStartOf="@+id/turn_indicator_text"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/x" />
+        android:background="@color/black"
+        android:fontFamily="monospace"
+        android:text="Play Again"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        android:clickable="false"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_3"
+        app:layout_constraintStart_toStartOf="@+id/vertical_guideline_0"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_guideline_3" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/turn_indicator_image_vertical_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/turn_indicator_image_horizontal_guideline_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/turn_indicator_image_horizontal_guideline_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.18" />
 </android.support.constraint.ConstraintLayout>
