@@ -26,7 +26,9 @@ class TwoPlayerModeChooserActivity : AppCompatActivity() {
                 finish()
             }
             1 -> {
-                // TODO: Play over network
+                val intent = Intent(this, PlayOverNetworkActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
     }
