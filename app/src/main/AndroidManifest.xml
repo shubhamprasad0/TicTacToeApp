@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".PlayWithHumanActivity" />
         <activity android:name=".PlayWithComputerActivity" />
-        <activity android:name=".IOrComputerFirstActivity"></activity>
+        <activity android:name=".IOrComputerFirstActivity" />
+        <activity android:name=".TwoPlayerModeChooserActivity"></activity>
     </application>
 
 </manifest>

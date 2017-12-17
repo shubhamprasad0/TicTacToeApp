@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, IOrComputerFirstActivity::class.java)
             startActivity(intent)
         } else {
-            val intent = Intent(this, PlayWithHumanActivity::class.java)
+            val intent = Intent(this, TwoPlayerModeChooserActivity::class.java)
             startActivity(intent)
         }
     }
